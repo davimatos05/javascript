@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+    <style>
+        button {
+            height: 20px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando os valores</h1>
+    <input type="number" name="numb1" id="numb1"> +
+    <input type="number" name="numb2" id="numb2">
+    <input type="button" value="Somar" id="somar">
+    <div id="res">Resultado</div>
+
+    <script>
+        let submit = document.getElementById('somar')
+        submit.addEventListener('click', soma)
+
+        function soma() {
+        var n1 = document.getElementById('numb1')
+        var n2 = document.querySelector('input#numb2')
+        var resultado = document.getElementById('res')
+        var tn1 = Number(n1.value)
+        var tn2 = Number(n2.value)
+        var s = tn1 ** tn2
+
+        res.innerHTML = `O Resultado da soma entre ${tn1} e ${tn2} é <strong>${s}</strong>`
+    
+    }
+    </script>
+</body>
+</html>

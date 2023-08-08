@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: #704343;
+            font: normal 2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando com DOM</h1>
+    <p>Aqui vai o resultado:</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        let body = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        body.style.backgroundColor = '#704343'
+
+        var name = window.prompt('Qual seu nome?')
+        var g = window.document.getElementById('msg')
+        g.style.background = 'green'
+
+        g.innerText = 'Vamos Aprender Comigo? ' + name
+    </script>
+</body>
+</html>

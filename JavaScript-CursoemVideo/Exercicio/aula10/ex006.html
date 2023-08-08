@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        div {
+            background-color: aquamarine;
+            text-align: center;
+            width: 30vw;
+            height: 10vh;
+
+        }
+    </style>
+</head>
+<body>
+    <div>Interaja!</div>
+
+    <script>
+        const d = window.document.getElementsByTagName('div')[0]
+        d.addEventListener('click', clicar)
+        d.addEventListener('mouseenter', entrou)
+        d.addEventListener('mouseout', saiu)
+
+        function clicar() {
+            window.document.getElementsByTagName('div')[0].innerText = Math.random()
+        }
+
+        function entrou() {
+            window.document.getElementsByTagName('div')[0].style.background = 'lightblue'
+        }
+
+        function saiu() {
+            window.document.getElementsByTagName('div')[0].style.background = 'aquamarine'
+        }
+    </script>
+</body>
+</html>
