@@ -4,20 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificador de Idade</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(38, 168, 211);
+            width: 98vw;
+            height: 94vh;
+        }
+        h1 {
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            width: 98vw;
+            height: 40px;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        div#container {
+           margin: auto;
+
+            background-color: white;
+            margin-top: 100px;
+            padding: 30px;
+            width: 60vw;
+            height: 30vh;
+            font-size: 25px;
+
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.336);
+        }
+        input {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        #submit {
+            padding: 5px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Verificador de Idade</h1>
+    
+    
     <div id="container">
-        <input type="number" name="ano" id="iano"><br>
-        <input type="radio" name="sexo" id="isexo"><br>
-            <select name="woman" id="iwoman"> Mulher</select>
-            <select name="man" id="iman">Homen</select>
 
-        <input type="submit" value="Verificar">
+           
+            <p> Ano de Nascimento
+                <input type="number" name="ano" id="iano" required><br>
+            </p>
+            
+            
+            <p> Sexo:
+                
+                    <input type="radio" name="sexo" id="mas" checked>
+                    <label for="mas">Masculino</label>
+                    <input type="radio" name="sexo" id="fem">
+                    <label for="fem">Feminino</label>
+                
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="idade()">
+            </p>
+             
+            
 
-        <p>Sex / idade</p>
+        <p id="res">Preencha os dados acima para ver o resultado!</p>
 
-        <script></script>
     </div>
+    <script src="JS/script.js"></script>
 </body>
 </html>
