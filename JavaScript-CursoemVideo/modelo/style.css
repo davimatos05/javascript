@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(42, 95, 145);
+
+    margin: 0px;
+    padding: 0px;
+
+    width: 98w;
+    height: 95vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+section {
+    margin: auto;
+    text-align: center;
+
+    background-color: white;
+
+    width: 49vw;
+    height: 48.5vh;
+}
+
+div p {
+    font-family: 3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 2em;
+}

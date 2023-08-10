@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(42, 95, 145);
+
+    margin: 0px;
+    padding: 0px;
+
+    width: 98w;
+    height: 95vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+section {
+    margin: auto;
+
+    background-color: white;
+
+    width: 49vw;
+    height: 48.5vh;
+
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px black ;
+}
+
+div {
+    margin-left: 25px;   
+    font-size: 20px; 
+}
+
+input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 2em;
+}
