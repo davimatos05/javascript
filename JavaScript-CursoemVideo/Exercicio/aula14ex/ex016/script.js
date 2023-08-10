@@ -2,16 +2,21 @@ function count() {
     let ini = document.querySelector('input#ini')
     let fim = document.querySelector('input#fim')
     let pass = document.querySelector('input#pass')
+    let res = document.querySelector('p#res')
+    res.innerHTML = 'Valores: <br>'
 
-    if (ini.value.length == 0 || pass.value == 0 ) {
+    if (ini.value.length == 0 || fim.value.length == 0 || pass.value.length == 0 || pass.value == 0 ) {
         window.alert('[ERRO] Informação invalida,Por Favor tente novamente!')
     } else {
-        let num = ini
-        let frase = document.getElementById('res')
-        frase.innerHTML = `Valores: <br>`
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(pass.value)
 
-        for (let num = ini.value; num <= fim.value; num += pass.value) {
-            console.log(num)
+        for (c = i; c <= f; c += p) {
+            res.innerHTML += `${c} -> `
         }
+
+        res.innerHTML += 'FIM'
     }
+    
 }
