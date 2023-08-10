@@ -12,11 +12,19 @@ function count() {
         let f = Number(fim.value)
         let p = Number(pass.value)
 
-        for (c = i; c <= f; c += p) {
-            res.innerHTML += `${c} -> `
-        }
+        if (i < f) {
+            for (c = i; c <= f; c += p) {
+                res.innerHTML += `${c} -> `
+            }
 
-        res.innerHTML += 'FIM'
+            res.innerHTML += 'FIM'
+        } else {
+            for (c = f; c <= i; c += p) {
+                res.innerHTML += `${c} -> `
+            }
+
+            res.innerHTML += 'FIM'
+        }
     }
     
 }
